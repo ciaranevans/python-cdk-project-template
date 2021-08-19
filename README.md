@@ -58,7 +58,7 @@ A `Makefile` is available in the root of the repository to abstract away commonl
 
 **`make format`**
 
-> This will peform a run of `isort` and `black`, this **will** modify files if issues were found
+> This will perform a run of `isort` and `black`, this **will** modify files if issues were found
 
 **`make unit-tests`**
 
