@@ -29,3 +29,7 @@ deploy:
 .PHONY: destroy
 destroy:
 	poetry run dotenv run npx cdk destroy --app cdk/app.py --force
+
+.PHONY: replace
+replace:
+	poetry run python replace.py $(project)

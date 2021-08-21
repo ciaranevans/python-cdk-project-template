@@ -34,9 +34,15 @@ A file named `example.env` is provided, copy this and fill it out with your valu
 
 To get setup for overall development, install the above [requirements](#requirements) first.
 
-To remove the filler values from this template, replace the header `Template Project` in
-[README.md](./README.md) and then also replace `TemplateProject` in both
-[app.py](./cdk/app.py) and [stack.py](./cdk/stack.py) with `YourProjectName`.
+To remove the filler values from this template, run:
+
+```console
+make replace project=<your-project-name>
+```
+
+Where `<your-project-name>` is a [PascalCase][] string, such as `MyCoolProject`
+
+[PascalCase]: https://techterms.com/definition/pascalcase#:~:text=PascalCase%20is%20a%20naming%20convention,in%20PascalCase%20is%20always%20capitalized
 
 You can then install the dependencies for development with:
 
@@ -75,3 +81,7 @@ A `Makefile` is available in the root of the repository to abstract away commonl
 **`make destroy`**
 
 > This will run a `cdk destroy` using the contents of your `.env` file. The destroy is auto-approved, so **make sure** you know what you're destroying first!
+
+**`make replace project=<your-project-name>`**
+
+> This will replace the value `TemplateProject` within `README.md`, `cdk/app.py`, and `cdk/stack.py` with the value of `project`
