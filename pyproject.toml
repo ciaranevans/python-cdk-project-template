@@ -8,11 +8,11 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.6.2"
 "aws-cdk.core" = "^1.119.0"
-black = "^21.7b0"
-flake8 = "^3.9.2"
+black = "^21.9b0"
+flake8 = "^4.0.0"
 isort = "^5.9.3"
-python-dotenv = "^0.19.0"
-pytest = "^6.2.4"
+python-dotenv = "^0.19.1"
+pytest = "^6.2.5"
 
 [tool.poetry.dev-dependencies]
 
